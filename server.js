@@ -4,6 +4,8 @@ var bodyParser = require('body-parser');
 
 var app=express();
 
+mongoose.connection("mongodb://root:root@ds127872.mlab.com:27872/time-waste");
+
 app.get('/',function(req,res){
   res.sendfile('index.html');
 });
